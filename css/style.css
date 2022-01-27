@@ -7,6 +7,10 @@
   box-sizing: inherit;
 }
 
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 html,
 body {
   font-family: "Roboto", "Arial", "Verdana", sans-serif;
@@ -51,6 +55,10 @@ ul {
 .header_inst {
   display: flex;
   align-items: center;
+}
+
+.header_telephone-text span:not(:last-child) {
+  margin-right: 1.2rem;
 }
 
 .header_maps span,
@@ -113,6 +121,10 @@ ul {
 .footer__inst-img {
   width: 3.3rem;
   height: 3.3rem;
+}
+
+.footer__about ul {
+  max-width: 22.4rem;
 }
 
 .footer__decor-1 {
@@ -222,6 +234,11 @@ ul {
   cursor: pointer;
 }
 
+.about__wrap {
+  padding-top: 2.5rem;
+  padding-bottom: 22.5rem;
+}
+
 .about__header {
   margin-top: 0;
   margin-bottom: 11rem;
@@ -246,7 +263,7 @@ ul {
 }
 
 .about__item {
-  box-shadow: 0 0 40px rgba(184, 0, 95, 0.2);
+  box-shadow: 0 0 4rem rgba(184, 0, 95, 0.2);
   border-radius: 0.9rem;
   overflow: hidden;
 }
@@ -282,4 +299,71 @@ ul {
   font-size: 1.4rem;
   line-height: 114%;
   color: #767676;
+}
+
+.reviews {
+  background-image: linear-gradient(95deg, rgba(212, 20, 90, 0.25), rgba(46, 49, 146, 0.25));
+}
+
+.review__wrapper {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+}
+
+.review__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  min-height: 24rem;
+  padding: 6.3rem 4.5rem 2rem 4.5rem;
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+
+.review__slide-text {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 117%;
+  text-align: center;
+}
+
+.review__slide-text::after {
+  content: "";
+  display: block;
+  margin: 1.6rem auto 1.2rem;
+  width: 13rem;
+  height: 0.2rem;
+  background-image: linear-gradient(90deg, #D4145A, #3D5BF5);
+}
+
+.review__slide-name {
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 115%;
+  text-align: center;
+  color: #8e8e8e;
+}
+
+.review__slide-photo {
+  width: 9.3rem;
+  height: 10.6rem;
+  background-color: #ffffff;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.review__slide-img {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.7rem;
+  height: 11rem;
+  background-image: linear-gradient(150deg, #D4145A, #2E3192);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
