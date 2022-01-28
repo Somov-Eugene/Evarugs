@@ -367,3 +367,116 @@ ul {
   background-image: linear-gradient(150deg, #D4145A, #2E3192);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  padding: 3rem 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  backdrop-filter: blur(4rem);
+}
+
+.modal__inner {
+  width: 118rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #ffffff;
+  background-image: url("../img/modal-back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 3.5rem rgba(212, 20, 90, 0.25);
+  border-radius: 1.5rem;
+}
+
+.modal__inner-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__inner-header {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 117%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4.2rem;
+}
+
+.modal__item {
+  width: 75rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__item:first-child {
+  margin-bottom: 1.7rem;
+}
+
+.modal__wrap-input {
+  width: 36rem;
+  min-height: 5.1rem;
+}
+
+.modal__input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 114%;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+}
+
+.modal__item-long {
+  width: 100%;
+  min-height: 8rem;
+  margin-bottom: 4rem;
+}
+
+.modal__message {
+  width: 100%;
+  outline: none;
+  resize: none;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 114%;
+  padding: 1rem 2.1rem;
+}
+
+.modal__button {
+  max-width: 17rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 115%;
+  padding: 1rem 3rem;
+}
+
+.modal__policy {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 115%;
+}
+
+.modal__policy input {
+  margin-right: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.modal__policy a {
+  text-decoration: none;
+}
